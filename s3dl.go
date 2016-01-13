@@ -38,7 +38,7 @@ func main() {
 		log.Fatalln("ListObjects failed:", err)
 	}
 	if *listObjectsO.IsTruncated {
-		fmt.Println("ListObjectsOutput is truncates")
+		fmt.Println("ListObjectsOutput is truncated")
 	}
 	downloader := s3manager.NewDownloader(awsSession)
 	fmt.Println("found keys:")
